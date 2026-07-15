@@ -2,11 +2,13 @@
 """逐段自動偵測語言的課程錄音轉錄。
 
 用法:
-    /home/tom/whisper-venv/bin/python transcribe.py 2026-07-15
+    ./transcribe.py 2026-07-15             # 轉錄該日全部（已有逐字稿的跳過）
+    ./transcribe.py 2026-07-15 05_MOD03    # 只轉檔名含 05_MOD03 的（插隊用）
     (faster-whisper 不在系統 python，一定要用這個 venv)
 
 會把 <日期>/VOICE/ 底下所有錄音轉成 <日期>/VOICE/transcripts/<檔名>.txt。
 每 5 分鐘一段獨立偵測語言（講師中英夾雜時避免整檔押錯語言）。
+斷點續傳：已存在 .txt 的錄音直接跳過；要重轉先刪那個 .txt。
 """
 import time, os, sys, glob, subprocess, tempfile
 from faster_whisper import WhisperModel
@@ -14,10 +16,11 @@ from faster_whisper import WhisperModel
 SEG = 300  # 每段 5 分鐘, 逐段自動偵測語言
 ROOT = os.path.dirname(os.path.abspath(__file__))
 
-if len(sys.argv) != 2:
-    sys.exit("用法: python3 transcribe.py <日期資料夾>   例: python3 transcribe.py 2026-07-15")
+if len(sys.argv) not in (2, 3):
+    sys.exit("用法: ./transcribe.py <日期資料夾> [檔名片段]   例: ./transcribe.py 2026-07-15 05_MOD03")
 
 DAY = sys.argv[1]
+ONLY = sys.argv[2] if len(sys.argv) == 3 else None
 SRC = os.path.join(ROOT, DAY, "VOICE")
 OUT = os.path.join(SRC, "transcripts")
 
@@ -28,6 +31,23 @@ os.makedirs(OUT, exist_ok=True)
 files = sorted(sum([glob.glob(os.path.join(SRC, e)) for e in ("*.aac", "*.m4a", "*.mp3", "*.wav")], []))
 if not files:
     sys.exit("%s 裡沒有錄音檔 (.aac/.m4a/.mp3/.wav)" % SRC)
+
+if ONLY:
+    files = [f for f in files if ONLY in os.path.basename(f)]
+    if not files:
+        sys.exit("沒有檔名含 %r 的錄音" % ONLY)
+
+# 斷點續傳：已有逐字稿的跳過
+todo = []
+for f in files:
+    out = os.path.join(OUT, os.path.splitext(os.path.basename(f))[0] + ".txt")
+    if os.path.exists(out):
+        print("[跳過] %s 已有逐字稿" % os.path.basename(f), flush=True)
+    else:
+        todo.append(f)
+files = todo
+if not files:
+    sys.exit("全部都已有逐字稿，無事可做")
 
 
 def duration(path):

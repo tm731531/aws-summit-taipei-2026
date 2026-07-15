@@ -28,9 +28,9 @@
 | 13:30–14:15 | KIRO02: AI Engineering with Prompt/Context/Harness | Room 201ABC | ① 團隊工程實踐 |
 | 14:30–15:00 | KIRO05: From Vibe Coding to Spec-Driven Approach | Room 201ABC | ① 標準化 AI 開發 |
 | 15:15–16:00 | MOD03: Multi-Tenant AI Platform on EKS（BitoGroup 案例）| Room 201DEF | ② 平台架構 |
-| 16:15–17:00 | MOD04: Kubernetes Platform with EKS Auto Mode | Room 201DEF | ② 維運擴展 |
+| ~~16:15–17:00~~ | ~~MOD04: Kubernetes Platform with EKS Auto Mode~~（未參加）| ~~Room 201DEF~~ | ~~② 維運擴展~~ |
 
-> 整天只換 3 次房間：3F → 201DEF → 201ABC →（原地）→ 201DEF →（原地）
+> 實際跑了 5 場（Keynote / MOD01 / KIRO02 / KIRO05 / MOD03），MOD04 臨時有事沒去。
 
 ### Day 2 — 2026-07-16（四）｜[筆記](2026-07-16/notes.md)
 

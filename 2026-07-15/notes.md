@@ -53,11 +53,13 @@
 
 ---
 
-## 16:15–17:00 MOD04: Kubernetes Platform with EKS Auto Mode  ｜ 📍 Room 201DEF
+## 🚫 未參加：MOD04（16:15–17:00 ｜ 📍 Room 201DEF）
 
-**角度**：維運擴展
+**AI 時代的 Kubernetes 平台：用 EKS Auto Mode 消除維運負擔**
 
-<!-- 現場記 -->
+臨時有事沒去，無錄音。
+
+> 角度 ②（規模化維運）這塊由 MOD03 部分覆蓋 —— MOD03 的多租戶 AI 平台本身就跑在 EKS 上。缺的是 EKS Auto Mode 這個具體的維運免除機制。會後可看 AWS 有無放簡報/錄影。
 
 ---
 
