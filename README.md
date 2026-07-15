@@ -3,7 +3,7 @@
 > AWS Summit Taipei 2026 的個人參會筆記。每天一個**日期資料夾**，內含當天整理好的 Markdown 筆記。GitHub 會自動渲染成網頁，直接點檔案就能讀。
 
 ## 活動資訊
-- **活動**：AWS Summit Taipei 2026（公開議程 50 場）
+- **活動**：AWS Summit Taipei 2026（公開議程 65 場）
 - **場地**：TICC 台北國際會議中心
 - **期程**：兩天（2026-07-15 ~ 2026-07-16）
 - **選場依據**：[我的推薦文 — 企業 AI 落地三角度](https://blog.tomting.com/2026/07/10/aws-summit-taipei-2026-enterprise-ai-sessions/)
@@ -11,7 +11,7 @@
 
 ## 🎯 選場的三個角度
 
-推薦文用這三條篩掉 50 場裡的雜訊：
+推薦文用這三條篩掉 65 場裡的雜訊：
 
 1. **讓團隊用起來** — 開發流程、工程實踐
 2. **基建擴展與地端支援** — 平台架構、K8s、遷移
@@ -21,28 +21,32 @@
 
 ### Day 1 — 2026-07-15（三）｜[筆記](2026-07-15/notes.md)
 
-| 時間 | 場次 | 角度 |
-|------|------|------|
-| 10:00–11:00 | Keynote | 開場總覽 |
-| 11:30–12:15 | MOD01: AI-Driven Development Lifecycle | ① 讓團隊用起來 |
-| 13:30–14:15 | KIRO02: AI Engineering with Prompt/Context/Harness | ① 團隊工程實踐 |
-| 14:30–15:00 | KIRO05: From Vibe Coding to Spec-Driven Approach | ① 標準化 AI 開發 |
-| 15:15–16:00 | MOD03: Multi-Tenant AI Platform on EKS（BitoGroup 案例）| ② 平台架構 |
-| 16:15–17:00 | MOD04: Kubernetes Platform with EKS Auto Mode | ② 維運擴展 |
+| 時間 | 場次 | 📍 會議室 | 角度 |
+|------|------|-----------|------|
+| 10:00–11:00 | KEY001 Keynote | 3F 大會堂 | 開場總覽 |
+| 11:30–12:15 | MOD01: AI-Driven Development Lifecycle | Room 201DEF | ① 讓團隊用起來 |
+| 13:30–14:15 | KIRO02: AI Engineering with Prompt/Context/Harness | Room 201ABC | ① 團隊工程實踐 |
+| 14:30–15:00 | KIRO05: From Vibe Coding to Spec-Driven Approach | Room 201ABC | ① 標準化 AI 開發 |
+| 15:15–16:00 | MOD03: Multi-Tenant AI Platform on EKS（BitoGroup 案例）| Room 201DEF | ② 平台架構 |
+| 16:15–17:00 | MOD04: Kubernetes Platform with EKS Auto Mode | Room 201DEF | ② 維運擴展 |
+
+> 整天只換 3 次房間：3F → 201DEF → 201ABC →（原地）→ 201DEF →（原地）
 
 ### Day 2 — 2026-07-16（四）｜[筆記](2026-07-16/notes.md)
 
-| 時間 | 場次 | 角度 |
-|------|------|------|
-| 10:00–11:00 | Keynote | 閉幕總結 |
-| 11:30–12:15 | AIML05: Enterprise AI Agents（HOYA BIT 案例）| ② 平台落地實作 |
-| 下午 | **用 Kiro 做 AI HR 小幫手**（改去）| ① Kiro 實作落地 |
-| ~~13:30–14:15~~ | ~~SEC01: Multi-Tenant AI Agent Governance SaaS~~ | ~~③ 治理框架~~ |
-| ~~14:25–15:05~~ | ~~FINTECH02: On-Premises to Agentic AI with Multi-Agent~~ | ~~② 地端遷移~~ |
+| 時間 | 場次 | 📍 會議室 | 角度 |
+|------|------|-----------|------|
+| 10:00–11:00 | KEY002 Keynote | 3F 大會堂 | 閉幕總結 |
+| 11:30–12:15 | AIML05: Enterprise AI Agents（HOYA BIT 案例）| 3F 大會堂 | ② 平台落地實作 |
+| 13:55–14:20 | **LT-006: 連 HR 也能上手!用 Kiro 打造 HR 的 AI 小幫手** | 2F Developer Community Zone | ① Kiro 實作落地 |
+| 14:25–15:05 | FINTECH02: 從地端到 AI · Multi-Agent | Room 102 | ② 地端遷移 |
+| ~~13:30–14:15~~ | ~~SEC01: 誰來看管 AI Agent?多租戶治理平台~~ | ~~Room 101BC~~ | ~~③ 治理框架~~ |
 
-> 💡 這一跳其實讓 **角度 ①（讓團隊用起來）收成一條完整線**：Day 1 的 KIRO02（工程實踐）+ KIRO05（spec-driven 方法論）是理論，Day 2 這場是拿 Kiro 真的做出 HR 小幫手 —— 方法論 → 實作，整理筆記時可以互相對照驗證。
+> 💡 **LT-006 只有 25 分鐘（Lightning Talk）**，不是佔掉整個下午 —— 它 14:20 結束、FINTECH02 14:25 才開始，兩場都聽得到。上午 Keynote 和 AIML05 同在 3F 大會堂，完全不用移動。
 >
-> ⚠️ 代價是**角度 ③（治理與安全）整條沒有現場覆蓋** —— SEC01 是那條線唯一的場次，沒有替補。會後看 AWS 有無放簡報/錄影再補。
+> 💡 這樣排讓 **角度 ①（讓團隊用起來）收成完整一條線**：Day 1 的 KIRO02（工程實踐）+ KIRO05（spec-driven 方法論）是理論，LT-006 是拿 Kiro 真的做出 HR 小幫手 —— 方法論 → 實作，可互相對照驗證。
+>
+> ⚠️ 唯一取捨是 **SEC01**（跟 LT-006 重疊 20 分鐘），而它是**角度 ③（治理與安全）唯一的場次**。同日 15:15 **SEC03**、16:15 **SEC04**（都在 Room 101BC）可部分補回治理面。
 
 ## 🔧 錄音 → 筆記流程
 

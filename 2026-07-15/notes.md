@@ -13,7 +13,7 @@
 
 ---
 
-## 10:00–11:00 Keynote
+## 10:00–11:00 Keynote  ｜ 📍 3F 大會堂
 
 **角度**：開場總覽
 
@@ -21,7 +21,7 @@
 
 ---
 
-## 11:30–12:15 MOD01: AI-Driven Development Lifecycle
+## 11:30–12:15 MOD01: AI-Driven Development Lifecycle  ｜ 📍 Room 201DEF
 
 **角度**：讓團隊用起來
 
@@ -29,7 +29,7 @@
 
 ---
 
-## 13:30–14:15 KIRO02: AI Engineering with Prompt/Context/Harness
+## 13:30–14:15 KIRO02: AI Engineering with Prompt/Context/Harness  ｜ 📍 Room 201ABC
 
 **角度**：團隊工程實踐
 
@@ -37,7 +37,7 @@
 
 ---
 
-## 14:30–15:00 KIRO05: From Vibe Coding to Spec-Driven Approach
+## 14:30–15:00 KIRO05: From Vibe Coding to Spec-Driven Approach  ｜ 📍 Room 201ABC
 
 **角度**：標準化 AI 開發
 
@@ -45,7 +45,7 @@
 
 ---
 
-## 15:15–16:00 MOD03: Multi-Tenant AI Platform on EKS（BitoGroup 案例）
+## 15:15–16:00 MOD03: Multi-Tenant AI Platform on EKS（BitoGroup 案例）  ｜ 📍 Room 201DEF
 
 **角度**：平台架構
 
@@ -53,7 +53,7 @@
 
 ---
 
-## 16:15–17:00 MOD04: Kubernetes Platform with EKS Auto Mode
+## 16:15–17:00 MOD04: Kubernetes Platform with EKS Auto Mode  ｜ 📍 Room 201DEF
 
 **角度**：維運擴展
 
