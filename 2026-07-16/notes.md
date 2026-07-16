@@ -31,18 +31,18 @@
 
 | 場次 | 投影片 | ✅ 可查證 | 🎤 口述 | ⚠️ 存疑 |
 |---|---|---|---|---|
-| KEY002 Keynote | **0 張** | 0 | 多數 | 多 |
+| KEY002 Keynote | 28 張（事後補） | 多數 | 幾項 | 4 |
 | AIML05 | 46 張 | ~62 | ~16 | 7 |
 | 社群 LT（Nitro）| 15 張 | ~41 | ~17 | 5 |
 | LT-006 | 30 張 | 見獨立文章 | — | — |
 
-> ⚠️ **Keynote 那節請當口述紀錄讀**：現場完全沒拍投影片（第一張照片是 11:30 的 AIML05），所有產品名、數字都是從中/英/韓三語逐字稿聽出來的。幾個關鍵名詞我另用公開資訊查證（標 🔎），其餘存疑一律進待查核。
+> 📌 **Keynote 投影片是事後補齊的**：現場當下沒拍到（第一張照片是 11:30 的 AIML05），原本整節只能靠口述。後來補到 28 張翻拍（k01–k28），已逐張交叉查核、把多數口述升級成投影片可查證。**但有 4 項投影片上沒有、只能靠口述或外部查證**：台北 Region 正式名稱、NASDAQ「20 億訊息/日」、NASDAQ Dynamic M-ELO 訂單型別、**Anthropic「Opus 4.8 連續自主工作 12 小時」**——這幾項維持 🎤/🔎，勿當投影片證實的事實。
 
 ---
 
 ## 重點摘要
 
-1. **Keynote 用三個客戶講同一句話：雲是地基、AI 是加速器、信任是決勝點。** NASDAQ（金融，把交易系統搬上 AWS、SEC 核准的 AI 訂單類型 Dynamic M-ELO）、KBS（媒體，一台 8K 攝影機用 AI 生全團直拍、世界盃即時戰術筆記）、Anthropic（Natalie Lee：Opus 4.8 能連續自主工作約 12 小時；「40% 的 agent 專案會失敗，不是模型問題，是交付問題」）。
+1. **Keynote 用三個客戶講同一句話：雲是地基、AI 是加速器、信任是決勝點**（NASDAQ 投影片 k02 原文「Cloud as the Foundation / AI as the Accelerator / Trust as the Differentiator」）。NASDAQ（金融，2008 年起把交易系統搬上 AWS）、KBS（媒體，一台 8K 攝影機用 AI 生全團直拍「VVERTIGO」、世界盃即時戰術筆記）、Anthropic（Natalie Mead：企業 LLM 市佔 3 年內 12%→40%；「40% 的 agent 專案會失敗，不是模型問題，是交付問題」）。
 2. **AIML05 是今年 AWS 主推的 agent 上 production 方案：Amazon Bedrock AgentCore**（9 大託管模組：Runtime/Memory/Gateway/Policy/Identity/Observability/Registry…）。HOYA BIT（台灣合規加密貨幣交易所）是「真的做出來」的案例——開發者只寫 agent 邏輯 + 一份 YAML，平台統一接管部署／工具／存取／追蹤／治理。
 3. **社群 LT（Nitro Enclaves）補上「使用中資料」這塊**：資料三態裡靜態、傳輸大家都會加密，唯獨「使用中」一進記憶體就是明文、連 root/雲端管理者都看得到。機密運算用硬體隔離的 TEE + KMS 遠端驗證（attestation），只有未被竄改的程式才拿得到金鑰解密，用來保護 LLM 推論。
 4. **LT-006 是角度①的收成**：非工程背景的 HR 用 Kiro 一個晚上做出內部工具。**已寫成獨立文章**（見下方連結），不在此重複。
@@ -54,59 +54,62 @@
 
 **角度**：閉幕定調 — 今年主軸
 
-> 🎤 **這節全部是講者口述，沒有一張投影片可查證**（現場沒拍 Keynote 投影片，第一張照片是 11:30 的 AIML05）。錄音本身完整（00:00–54:44），夾中/英/韓三語。所有產品名、數字都是 whisper 聽出來的。
->
-> 標記：**🎤** 僅口述、未查證 ｜ **🔎** 經公開資訊查證過（非投影片）｜ **⚠️** 存疑、進待查核
+> 📌 投影片為**事後補齊**（28 張 k01–k28），已逐張與逐字稿交叉查核。標記：**✅** 投影片可查證（附 k 張號）｜**🎤** 僅口述、投影片無｜**🔎** 經公開資訊查證（非投影片）｜**⚠️** 存疑、待查核。投影片歸屬：k01–k12 NASDAQ、k11+k13–k20 KBS、k21 Robert 串場、k22–k28 Anthropic。
 
 ### 一句話
 
-三個客戶（NASDAQ 金融、KBS 媒體、Anthropic AI）串成同一論點：**雲是地基、AI 是加速器、信任是決勝點**。收尾兩個 takeaway——(1) 把 AI 當「7×24 的數位員工／夥伴」重新設計流程，不是拿來加速舊流程的工具；(2) 轉型要選「可信任」的夥伴（合規、規模、穩定）。
+三個客戶串同一論點，寫在 NASDAQ 的 k02 上：**Cloud as the Foundation / AI as the Accelerator / Trust as the Differentiator**（雲是地基、AI 是加速器、信任是決勝點）。收尾兩個 takeaway——(1) 把 AI 當「7×24 的數位員工／夥伴」重新設計流程，不是拿來加速舊流程的工具；(2) 轉型要選「可信任」的夥伴。
 
 ### 開場：Robert Wong（AWS 台灣董事總經理）
 
 - 🎤 前兩年（2023、2024）Day 2 都因**颱風停班停課取消**，今年颱風上週過境、天公作美，第二天活動正常辦成。
-- 🎤 AWS 在台灣紮根 **14 年**；去年 6 月啟用**台北 Region**（逐字稿聽成「Tiger Region / Type A Region / A-Class」，⚠️ 實際應為 **AWS 亞太（台北）Region**）。強調設計與全球一致、**三個可用區（AZ）物理距離隔離**、符合台灣資料落地與合規要求，服務對象含半導體、製造、物流、零售、媒體。
+- 🎤 AWS 在台灣紮根 **14 年**；去年 6 月啟用**台北 Region**（逐字稿聽成「Tiger/Type A/A-Class Region」，⚠️ 正式名稱投影片未出現，公開資料為 **AWS 亞太（台北）Region**）。強調設計與全球一致、**三個可用區（AZ）物理距離隔離**、符合台灣資料落地與合規要求。
 
-### 客戶一：NASDAQ（Gabriel Walker）
+### 客戶一：NASDAQ（Gabriel Walker，k01–k12）
 
-> ⚠️ 講者名 whisper 聽成「Gay Worker」，應為 **Gabriel Walker**。
+- ✅ **k01** NASDAQ + AWS 合作**始於 2008**（標題「A Cloud Journey Since 2008」）：2008 Market Replay 上 AWS（首度證明雲能支撐受監管市場基礎設施）→ 2009–2021 漸進遷移 → **2022–2023 首批市場上雲：MRX Options、Nasdaq Bond & GEMX Options** → Today AI-enabled and managed services。
+- ✅ **k04** 資本市場四大複雜度：Rising regulation／Growing data volumes／Tightening latency／Automation & Control。
+- ✅ **k06** Markets Are Becoming Always-On：轉向 **23 小時 × 5 日交易**，維護/升級窗口越來越小 → 需 real-time risk、always-on controls、韌性基礎設施。
+- ✅ **k07** 受控上雲四階段：01 Data & analytics（風險低、價值明確處起步）→ 02 Risk workloads → 03 Dev & testing（標準化環境）→ 04 Front-to-back workflows。
+- ✅ **k08** AI 嵌入真實工作流：Surveillance & Control（交易與金融犯罪監控）／Trade lifecycle／Investigations & Compliance。
+- ✅ **k10** **Nasdaq CapCloud & AWS**（受管服務）：Run（24/7 資安/系統/事件監控、L2 支援）／Change（升級、效能、非功能測試、服務編排）／Nasdaq Assets（Ops & InfoSec、治理、應用平台），底部「Deep partnership with AWS」。（拼法定案：**Nasdaq CapCloud**）
+- ✅ **k12** 收尾三句：Cloud→定義市場如何運作／AI→定義決策如何做成／Trust→基礎設施、平台、夥伴。
+- 🎤 每天處理約 **20 億則訊息**（⚠️ 投影片無此數字，僅口述）。
+- 🔎 提到一個 AI 驅動訂單類型（逐字稿聽成「SDC-approved… VLOG」）→ 外部查證為 **Dynamic M-ELO**（SEC 2023/9 核准的首個 AI 訂單類型）。⚠️ **28 張投影片皆無此項**，維持外部查證。
 
-- 🎤 NASDAQ 與 AWS 合作近 20 年（口述另提「始於 2008」「18 年」，數字不一）。
-- 🎤 2022 年把美國最大的選擇權交易市場搬上 AWS；每天處理約 **20 億則訊息**（⚠️ 口述數字）。
-- 🎤 NASDAQ 轉向 **23 小時 × 5 日交易**（always-on market），維護窗口越來越小 → 需要 real-time controls、強資安、韌性基礎設施。
-- 🔎 提到一個 AI 驅動訂單類型（逐字稿聽成「SDC-approved… VLOG」）→ 查證為 **Dynamic M-ELO（Dynamic Midpoint Extended Life Order）**，NASDAQ 首個 AI 驅動訂單類型、**SEC 於 2023/9 核准**；每 30 秒分析 140+ 個資料點動態調整持有期，測試中 fill rate +20.3%。
-- ⚠️ 受管服務方案「NASDAQ CapCloud on AWS」（treasury / trading / risk / settlement 單一平台），拼法待查核。
+### 客戶二：KBS 韓國（k11、k13–k20）
 
-### 客戶二：KBS 韓國（AI 專案團隊，李雲杰／音譯）
+- ✅ **產品名定案 = VVERTIGO**（雙 V，非逐字稿的「Multigon/멀티곤」）。k11「One stage. Every member. One channel.」三個數字：**10.3M 訂閱、2,250 支直拍/年、1 PB 典藏**（⚠️ 逐字稿聽成「1TB」，投影片是 **1 PB**）。
+- ✅ **k13** From post-production to near-live：Self-hosted GPU 後製（小時級）→ **AWS Inferentia** 分散式推論（分鐘級）；已外擴到日本 **KDDI、TV Asahi Production**（更正：是朝日電視的**製作公司**，非電視台本身）。
+- ✅ **k14** SBS 自 2026 初起用 VVERTIGO 經營 YouTube K-POP 頻道：8K 全場直拍→會員付費、個別直拍→子頻道導流。
+- ✅ **世界盃 AI 戰術筆記**（k15–k19）：用於 **2026 FIFA 世界盃**，解說員在墨西哥轉播席即時使用。
+  - ✅ **k16/k17** 即時路徑：墨西哥→**AWS MediaConnect（SRT）**→首爾，**約 10,000 km**、**2 週建置**（受管服務、非租用專線）。
+  - ✅ **k16/k18** 分析路徑：Match video → **Amazon S3** → **AWS Step Functions**（轉碼／索引／**TwelveLabs Pegasus 1.5** 多模態影片理解／存 **DynamoDB**）→ 事件時間軸；自動標記進球/犯規/越位。（拼法定案：**TwelveLabs Pegasus 1.5**）
+  - ✅ **k19** 邊緣端即時繪圖：靜格擷取→球場線偵測/單應性估計→球員偵測→透視校正疊圖，**全部 on-device**、零延遲，「邊講邊畫」取代後製。
+- ✅ **k20** 貫穿主軸：消除 FRAME（一台攝影機拍全員）／DISTANCE（墨西哥即時連首爾）／DELAY（後製變即時）三個物理限制。
 
-> ⚠️ 這段夾大量韓文，whisper 亂碼嚴重（「수위 전신」重複多次為亂碼），產品名以公開報導查證為準。
+### Robert 串場：AI 轉型光譜（k21）
 
-- 🎤 主題：AI + AWS 消除「直播的物理限制」（畫框、距離、延遲）。
-- 🔎 **K-POP 直拍**：產品名逐字稿聽成「벌티곤/Multigon」→ 查證為 **VVERTIGO**（KBS 自 2018 年開發的 AI 直拍引擎）。舞台觀眾席裝一台 8K 攝影機，AI 做「Reframing」——辨識+追蹤每位成員、裁成 9:16，**一台攝影機生出全部成員的直拍**；遮擋座位從 30–40 個降到 5–10 個。用 **AWS Inferentia** 做推論，數小時 → 數分鐘。技術已外擴到日本 KDDI、朝日電視，韓國 SBS 於 2026 初開始用。🎤 逐字稿另稱《Music Bank》每年產 2250 部（每天約 6 部）——⚠️ 與公開報導「年產超過一萬支 fancam」層級不同，數字待釐清。
-- 🎤 **世界盃 AI 戰術筆記**：2 週開發，用於 **2026 FIFA 世界盃**轉播，解說員在墨西哥轉播席即時使用。架構（⚠️ 拼法待查核）：**AWS MediaConnect**（墨西哥→首爾約 1 萬公里、SRT 傳輸）、**AWS S3**、**AWS Step Functions**、AI 模型用 **Twelve Labs 的 Pegasus API**。強調 device 端處理、零延遲、後製消失。
+- ✅ **k21** THE AI TRANSFORMATION SPECTRUM 兩端：**NEW BUSINESS**（AI 原生思維、打造新產品）↔ **MODERNISATION（AI 加速更新 10–20 年的 legacy 系統）**。
+- 🎤 台灣案例（對應 MODERNISATION 端）：某客戶用 AI agentive platform 做 **reverse engineering**（讀懂老系統→生技術文件→生新程式），**一個下午完成過去團隊兩個月做不到的事**。
 
-### 台灣案例：老系統現代化（Robert，35:00–37:01）
+### 客戶三：Anthropic（Natalie Mead，Head of Applied AI - APAC，k22–k28）
 
-- 🎤 台灣某客戶用 AI agentive platform 做 **reverse engineering**：讀懂沒人看得懂的老系統 → 生技術文件 → 生新程式改造，**一個下午完成過去團隊兩個月做不到的事**。點題：AI 不只做創新，也能救沒有 security patch 的核心舊系統。
+> ⚠️ **更正：講者是 Natalie Mead（k22），非 Lee**（口譯/whisper 聽成 Lee）。
 
-### 客戶三：Anthropic（Natalie Lee，APAC Applied AI 負責人）
-
-> 這段英文清楚，可信度相對高，但仍屬 🎤（無投影片）。人名/書名 whisper 有錯。
-
-- 🎤 **自主工作時長的演進**：Opus 3（2024/3）分鐘級 → Opus 4（2025/5）1.7 小時 → 2025/11 約 4.9 小時 → **Opus 4.8 約 12 小時**連續自主工作。
-- 🎤 技術史：2017 Google transformer 論文 → 2020 **scaling laws**（聽成「scaling wash」），提出者為 Anthropic 首席科學家 **Jared Kaplan**（聽成「Jerry Kaepern」）。
-- 🎤 **Eric 的 bug 故事**：team 成員 Eric 在 Slack 回報 connector bug → 工程師拉進 **Claude in Slack（逐字稿「Claw Tag」）** + Claude → 約 5 行 code、**22 分鐘**修好並一起 review。用來說明「月 → 分鐘」的節奏。
-- 🎤 **Gartner：2027 年 40% 的 agent 專案會被取消**——「不是模型問題，是交付問題（delivery problem）」。
-- 🎤 差異化：**Constitutional AI**、**Responsible Scaling Policy**（產業在抄）、**MCP 是 Anthropic 創的產業標準**、Skills。對受監管企業「部署姿態是可稽核的，不是理想化的」。
-- 🎤 **市佔**：3 年前 12% → 2026 年 **企業市場 40%**（Menlo 的 Tim Tully 背書）。⚠️ 口述數字。
-- 🎤 AWS 是 primary cloud、數十億美元互相投資、用 **Trainium** 訓練晶片共同工程。
-- 🎤 三支柱：smart employees（Claude Code / Claude Cowork）→ faster processes（agents 壓縮 contract review / KYC / claims）→ transformative products（把 Claude 嵌進自家產品）。
-- 🎤 台灣案例：**ASUS 華碩**（聽成 ASUIS）用 Claude enterprise 賦能員工。模型分層：Opus（長任務）／Sonnet（通用）／Haiku（對話、成本敏感）。
-- 🎤 引 Dario Amodei 的《**Machines of Loving Grace**》（聽成「machines without embrace」）：AI 走向要靠人主動「往正確方向傾斜」。
+- ✅ **k24** **企業 LLM 市佔 12% → 40%**（Anthropic 成為企業領導者）；引言：連續 **18 個月**居 coding LLM 排行榜首（自 2024/6 Claude Sonnet 3.5 起）——**Tim Tully, Partner, Menlo Ventures**。
+- ✅ **k23** 差異化四塊：Research／Safety（首個把 responsible scaling 制度化）／**Products（Claude Code, computer use, MCP, Skills 等）**／Customers（置中）。
+- ✅ **k25/k27** 三支柱：**Smarter employees → Faster processes → Transformative products**（k25 附客戶 logo 牆：Disney/Goldman Sachs/Databricks/GitHub 等）。
+- ✅ **k26** 台灣案例：**ASUS 華碩**用 **Claude Enterprise** 賦能員工，引言署名 **Alan Hsieh, CTO, ASUS**。
+- ✅ **k27** 「Claude thinking engine」堆疊；模型分**四層**（⚠️ 更正：原漏最上層）：**Claude Fable**（Frontier intelligence，逐字稿聽成「Cloud Babel」）／**Opus**（industry-leading）／**Sonnet**（general-purpose）／**Haiku**（cost-effective）＋ 底層雲（第一方 + **aws**）。
+- ✅ **k28** 引 **Dario Amodei《Machines of Loving Grace》**：AI 走向要靠人主動「tilt things in the right direction」。
+- 🎤 **Gartner：2027 年 40% 的 agent 專案會被取消**——「不是模型問題，是交付問題」（投影片無此頁，口述）。
+- 🎤 **Opus 4.8 連續自主工作約 12 小時**（Opus 3 分鐘 → Opus 4 1.7h → 4.9h → 4.8 約 12h）——⚠️ **28 張投影片無此時間軸，維持口述**。
+- 🎤 Eric 的 bug 故事：Slack 回報 → 拉進 Claude → 約 5 行 code、**22 分鐘**修好（說明「月→分鐘」）。AWS 是 primary cloud、用 **Trainium** 訓練晶片。
 
 ### 收尾（Robert）
 
-- 🎤 兩個 takeaway：(1) **AI 原生思維**——不是把 AI 當工具加速舊流程，而是當「7×24 的代理人/團隊成員」重新打造流程（例：24 小時盯產線缺陷、發現後自動查 log / 過往 RCA report、推算原因與解法給工程師）；(2) 轉型規模龐大且面對監管合規，要選**可信任的夥伴**確保穩定、保住商譽。
+- 🎤 兩個 takeaway：(1) **AI 原生思維**——當 AI 是「7×24 的代理人/團隊成員」重新打造流程（例：24 小時盯產線缺陷、自動查 log 與過往 RCA、推算原因與解法給工程師）；(2) 轉型面對監管合規，要選**可信任的夥伴**確保穩定、保住商譽。
 
 ---
 
@@ -314,10 +317,12 @@
 
 ## ❓ 待查核（彙整）
 
-**Keynote（無投影片，全需查）**
-- 台北 Region 正式名稱（逐字稿 Tiger/Type A/A-Class）
-- NASDAQ「20 億訊息/日」「CapCloud」拼法；KBS《Music Bank》年產量（2250 vs 一萬）；世界盃架構 MediaConnect/S3/Step Functions/Twelve Labs Pegasus 拼法
-- Anthropic 市佔 40%（口述數字）
+**Keynote（28 張投影片已補、大多定案，剩以下 4 項投影片仍無）**
+- 台北 Region 正式名稱（投影片未出現；公開資料為 AWS 亞太（台北）Region）
+- NASDAQ「20 億訊息/日」（僅口述）
+- NASDAQ Dynamic M-ELO 訂單型別（僅外部查證，投影片無）
+- **Anthropic「Opus 4.8 連續自主工作 12 小時」**（僅口述，投影片無此時間軸）
+- （已定案，不再列待查：CapCloud 拼法、KBS 2,250 直拍/年、VVERTIGO、TwelveLabs Pegasus 1.5、市佔 40%、講者 Natalie Mead、四層模型含 Fable）
 
 **AIML05**
 - Runtime「8 小時連續 session」「某些區域 5,000 session」——投影片 021/022 只有 2,500 / 5min / 15min / 60min，其餘勿引用
